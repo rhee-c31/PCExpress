@@ -187,8 +187,8 @@
 }
 
 .card-txt .avst {
-    margin: 0.3vw 0;
-    font-size: 0.7vw;
+    font-size: 0.85vw;
+    margin-bottom: 0.5vh;
     font-weight: 200;
 }
 
@@ -197,7 +197,7 @@
     font-weight: bold;
     color: rgb(255, 255, 255);
     letter-spacing: 0.1vw;
-    font-size: 1vw;
+    font-size: 1.3vw;
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -281,6 +281,10 @@
 
     .textinho p {
         font-size: 1.5vw;
+    }
+
+    .card-txt .avst {
+        font-size: 1.3vw;
     }
 
 }
