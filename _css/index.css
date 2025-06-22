@@ -113,7 +113,6 @@
     justify-content: center;
     align-items: center;
     background-color: #191919;
-    box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.3);
     border-radius: 1.2vw;
 }
 
@@ -125,16 +124,21 @@
     height: 60%;
     justify-content: center;
     align-items: stretch;
-    margin: 4vw;
-    gap: 2vw;
+    margin: 2vw;
+    gap: 2.25vw;
 }
 
 .card {
-    width: 16vw;
+    width: 17vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: left;
+    background-color: #1d1b1e;
+    border-radius: 0.3vw;
+    box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.3);
+
 }
 
 .card:hover {
@@ -147,21 +151,20 @@
     color: rgb(177, 4, 229);
 }
 
-.card:hover .card-img {
+/* .card:hover .card-img {
     background: linear-gradient(to bottom, #2a2a2a, #322642);
     transition: background-color 0.2s ease-in-out;
 }
-
+ */
 
 .card-img {
     display: flex;
     width: 100%;
-    height: 100%;
-    border-radius: 0.3vw;
+    height: 65%;
     justify-content: center;
     align-items: center;
-    background-color: #2a2a2a;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    background-color: #292929;
+    border-radius: 0.3vw;
 }
 
 .card-img img {
@@ -173,32 +176,26 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 0.8vh;
-    margin-top: 1.5vw;
+    gap: 1vh;
+    margin: 1.65vw 1.5vw 1.5vw 1vw;
 }
 
 .card-txt h2 {
     font-family: 'Inter', sans-serif;
     color: rgb(255, 255, 255);
-    font-size: 1.5vw;
+    font-size: 1vw;
     font-weight: 550;
     margin: 0;
     text-wrap: nowrap;
 }
 
-.card-txt .avst {
-    font-size: 0.85vw;
-    margin-bottom: 0.5vh;
-    font-weight: 200;
-}
-
 .card-txt p {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     letter-spacing: 0.1vw;
-    font-size: 1.3vw;
-    max-width: 100%;
+    font-size: 1.25vw;
+    max-width: 80%;
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
@@ -206,18 +203,77 @@
 }
 
 .tit {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2vh 0;
+    margin: 4vh 0;
     padding: 0;
 }
 
 .tit h1 {
     color: white;
-    font-family: Poppins;
-    font-size: 4vw;
+    font-family: Inter;
+    font-size: 2vw;
+}
+
+.categories-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories {
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.category {
+    display: flex;
+    width: 28vw;
+    height: 15vw;
+    background-color: #292929;
+    border-radius: 0.8vw;
+    overflow: hidden;
+}
+
+.category:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.category-img {
+    width: 65%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.category-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.category-txt {
+    width: 45%;
+    margin: 1.5vw;
+    overflow: hidden;
+}
+
+.category-txt h1 {
+    font-size: 3vw;
+    font-family: 'Montserrat';
+    color: white;
+    text-wrap: nowrap;
+    margin: 0;
+}
+
+.category-txt p {
+    color: white;
+    font-size: 0.8vw;
+    font-family: 'Inter';
+    margin-top: 1vw;
 }
 
 @media only screen and (max-width:1500px) {
@@ -235,13 +291,17 @@
         padding: 0;
     }
 
-    .banner img {
-        width: 100%;
-        height: 90%;
+    .banner {
+        height: 80%;
     }
 
     .faixa {
         margin-top: 0;
+        height: 10%;
+    }
+
+    .faixa img {
+        height: 70%;
     }
 }
 
@@ -257,7 +317,7 @@
 
     .banner img {
         width: 100%;
-        height: 75%;
+        height: 95%;
     }
 
     .text p {
@@ -267,6 +327,15 @@
     .cards {
         height: 60%;
     }
+
+    .faixa {
+        height: 8%;
+    }
+
+    .faixa img {
+        height: 70%;
+    }
+
 }
 
 @media only screen and (max-width:875px) {
@@ -280,11 +349,15 @@
     }
 
     .textinho p {
-        font-size: 1.5vw;
+        font-size: 1.25vw;
     }
 
     .card-txt .avst {
-        font-size: 1.3vw;
+        font-size: 1.13vw;
+    }
+
+    .category-txt p {
+        font-size: 1.2vw;
     }
 
 }
@@ -296,21 +369,32 @@
 
     .main {
         width: 100%;
-        height: 50%;
+        height: 40%;
         padding: 0;
     }
 
-    .text-container {
-        height: 50%;
+    .banner img {
+        height: 100%;
     }
 
-    .banner img {
-        width: 100%;
-        height: 55%;
+    .text-container {
+        height: 40%;
     }
 
     .card {
-        width: 20vw;
+        width: 25vw;
+    }
+
+    .card-txt {
+        margin: 1.25vw;
+    }
+
+    .card-txt h2 {
+        font-size: 1.35vw;
+    }
+
+    .card-txt p {
+        font-size: 1.85vw;
     }
 
     .cards {
@@ -318,7 +402,25 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 5vw;
+        gap: 3vw;
     }
 
+    .faixa {
+        height: 4%;
+    }
+
+    .tit {
+        margin: 4vw;
+    }
+
+    .hidden-mb {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:450px) {
+
+    .banner img {
+        height: 80%;
+    }
 }
