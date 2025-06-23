@@ -1,0 +1,31 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8vh;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vh;
+    margin: 8vh 0 6vh 0;
+}
+
+.texto h1 {
+    font-size: 5vw;
+    font-family: montserrat;
+    color: white;
+    margin: 0;
+}
+
+.texto p {
+    font-size: 1.5vw;
+    font-family: inter;
+    color: white;
+    margin: 0;
+}

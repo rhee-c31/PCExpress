@@ -8,7 +8,7 @@ body {
 
 .menu {
     display: flex;
-    gap: 10%;
+    gap: 7vw;
     width: 100%;
     height: 9%;
     justify-content: left;
@@ -30,11 +30,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 .logo img {
-    width: 3vw;
+    width: 2.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,6 +44,27 @@ a {
     transform: scale(1.05);
     transition: transform 0.1s ease-in-out;
     transform-origin: center;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3%;
+}
+
+.login img {
+    width: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login img:hover {
+    transform: scale(1.05);
+    transition: transform 0.1s ease-in-out;
+    transform-origin: center;
+
 }
 
 .links {
@@ -77,56 +98,79 @@ a {
 }
 
 footer {
+    width: 100%;
+    height: 40vh;
+    background-color: #191919;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 35dvh;
-    background-color: #191919;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
 }
 
-.footer-container {
-    width: 80%;
+footer .container {
+    width: 70%;
     height: 60%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    gap: 4vw;
+    justify-content: stretch;
+    align-items: center;
+    gap: 12vw;
+    margin: 2vh;
+}
+
+footer .container2 {
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin: 2vh;
 }
 
-.footer-sec {
+footer .container2 p {
+    font-size: 1vw;
+    text-align: center;
+}
+
+footer hr {
+    width: 70%;
+    height: 0.05vh;
+    background-color: #ffffff;
+    margin: 2vh 0;
+}
+
+.section {
+    width: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: stretch;
     align-items: left;
-    width: 100%;
-    height: 100%;
-
+    margin-bottom: 1vh;
 }
 
-.footer-sec h1 {
-    font-size: 1.5vw;
-    margin: 0;
-
+.section h2 {
+    text-align: left;
+    font-size: 2vw;
+    margin: 2vh 0 0 0;
 }
 
-.footer-sec p {
-    font-size: 1vw;
-    width: 70%;
-}
-
-.footer-sec ul {
+.section ul,
+a {
     padding: 0;
+    font-size: 1vw;
+    color: white;
 }
 
-.footer-sec a {
+.section a:hover {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: underline;
+}
+
+.section p {
+    width: 100%;
     font-size: 1vw;
 }
 
@@ -139,6 +183,10 @@ footer {
 
     .nav a {
         font-size: 1.5vw;
+    }
+
+    footer {
+        height: 29vh;
     }
 }
 
@@ -155,5 +203,13 @@ footer {
 
     .logo img {
         width: 6vw;
+    }
+
+    footer {
+        height: 20vh;
+    }
+
+    .section {
+        height: 30%;
     }
 }
