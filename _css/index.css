@@ -271,15 +271,6 @@
     .banner {
         height: 80%;
     }
-
-    .faixa {
-        margin-top: 0;
-        height: 10%;
-    }
-
-    .faixa img {
-        height: 70%;
-    }
 }
 
 @media only screen and (max-width:1050px) {
@@ -304,15 +295,6 @@
     .cards {
         height: 60%;
     }
-
-    .faixa {
-        height: 8%;
-    }
-
-    .faixa img {
-        height: 70%;
-    }
-
 }
 
 @media only screen and (max-width:875px) {
@@ -376,10 +358,6 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 3vw;
-    }
-
-    .faixa {
-        height: 4%;
     }
 
     .tit {

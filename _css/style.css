@@ -1,11 +1,10 @@
 html,
 body {
-    min-height: 100dvh;
-    height: auto;
+    height: 100%;
     padding: 0;
     margin: 0;
     background-color: #131313;
-    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 * {
@@ -182,7 +181,7 @@ a {
 
 .faixa {
     width: 100%;
-    height: 15%;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,11 +190,19 @@ a {
 
 .faixa img {
     width: 100%;
-    height: 17vh;
+    height: 100%;
     display: block;
 }
 
+@media only screen and (max-width:1250px) {
+    .faixa {
+        margin-top: 0;
+    }
 
+    .faixa img {
+        height: 70%;
+    }
+}
 
 @media only screen and (max-width:950px) {
 
