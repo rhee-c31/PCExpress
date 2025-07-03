@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     gap: 1.5vh;
-    margin: 10vh 0 7vh 0;
+    margin: 15vh 0 4vh 0;
 }
 
 .texto h1 {
@@ -47,4 +47,16 @@
     font-family: inter;
     color: white;
     margin: 0;
+}
+
+@media only screen and (max-width:750px) {
+
+    .texto {
+        margin: 10dvh 0 6dvh 0;
+    }
+
+    .mapa {
+        width: 80dvw;
+        height: 80dvh;
+    }
 }

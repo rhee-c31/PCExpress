@@ -1,0 +1,101 @@
+.main {
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10vw 5vw 5vw 5vw;
+    gap: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vh;
+    margin: 15vh 0 4vh 0;
+}
+
+.texto h1 {
+    font-size: 4vw;
+    font-family: montserrat;
+    color: white;
+    margin: 0;
+}
+
+.texto p {
+    font-size: 1.25vw;
+    font-family: inter;
+    color: white;
+    margin: 0;
+}
+
+h2 {
+    color: white;
+    font-family: Montserrat;
+    font-size: 3vw;
+    margin: 0.5vh 0;
+    width: 70%;
+    text-align: left;
+}
+
+p {
+    color: white;
+    font-family: Inter;
+    font-size: 0.8vw;
+    text-align: left;
+}
+
+.img {
+    width: 35%;
+    height: auto;
+}
+
+.txt {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2vw;
+    gap: 0;
+}
+
+.txt p {
+    width: 70%;
+}
+
+img {
+    border-radius: 0.3vw;
+}
+
+.sobre,
+.objetivo,
+.equipe {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre {
+    display: flex;
+}
+
+.sobre .txt,
+.equipe .txt {
+    padding-left: 2vw;
+}
+
+.sobre img,
+.objetivo img,
+.equipe img {
+    width: 100%;
+}
